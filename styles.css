@@ -1,48 +1,41 @@
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #f3f4f6 25%, #d1d5db 75%);
-    animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-h1, h2, p {
-    color: #334155;
-    margin: 0;
-    padding: 10px;
+.hero {
+    background: linear-gradient(135deg, #6b6bce, #b3c4e0);
+    padding: 50px 20px;
     text-align: center;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+.about {
+    background: #f4f4f4;
+    padding: 40px;
+    margin: 20px 0;
 }
 
-.card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+.project {
+    flex: 1 1 300px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
-@media (max-width: 768px) {
-    .portfolio {
-        padding: 20px;
-    }
+.project:hover {
+    transform: scale(1.05);
+}
+
+.skills {
+    background: #fff;
+    padding: 40px;
+}
+
+.contact {
+    background: linear-gradient(135deg, #6b6bce, #b3c4e0);
+    padding: 50px 20px;
+    text-align: center;
 }
